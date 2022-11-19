@@ -1,0 +1,15 @@
+course_id;categories;level;age_group;user_id;rating
+C Programming for Beginners;[study, programming, computer];beginner;[young adults, adults, teenager];Nicolas;4.0
+C Programming for Experts;[study, programming, computer];expert;[young adults, adults, teenager];Nicolas;3.0
+German Course for Beginners;[study, language, german];beginner;[young adults, adults, teenager];Nicolas;2.0
+German Course for Experts;[study, language, german];expert;[young adults, adults, teenager];Nicolas;1.0
+Making Your CV;[work];beginner;[young adults, adults, teenager];Nicolas;2.0
+Painting Course;[leisure, art];beginner;[adults, young adults, teenager, elderly, children];Nicolas;4.0
+English Course for Beginers;[study, language, english];beginner;[young adults, adults, teenager];Nicolas;2.0
+English Course for Experts;[study, language, english];expert;[young adults, adults, teenager];Nicolas;1.0
+Sewing for Beginners;[skill, art];beginner;[young adults, adults, teenager, adults, elderly];Nicolas;3.0
+Haircutting for Beginners;[skill];beginner;[young adults, adults, teenager];Nicolas;4.0
+Salsa for Beginners;[dance, art];beginner;[young adults, adults, teenager, elderly, children];;
+Salsa for Experts;[dance, art];expert;[young adults, adults, teenager, elderly, children];;
+Computer for Elderly;[computer, technology];beginner;[elderly];;
+Computer for Children;[computer, technology];beginner;[children];;

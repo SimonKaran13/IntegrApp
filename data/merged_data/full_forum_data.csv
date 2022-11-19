@@ -1,0 +1,14 @@
+forum_id;categories;age_group;user_id;rating
+TUM Students;[students, university, studies, TUM];[teenager, young adults];Nicolas;4.0
+Engineers;[job, work, office];[adults, young adults, elderly];Nicolas;3.0
+Engineering Students;[students, university, studies, TUM, LMU, HM];[teenager, young adults];Nicolas;2.0
+Hochschule Muenchen Students;[students, university, studies, HM];[teenager, young adults];Nicolas;1.0
+Medicine Students;[students, university, studies, TUM, LMU];[teenager, young adults];Nicolas;2.0
+LMU Students;[students, university, LMU];[teenager, young adults];Nicolas;4.0
+Looking for House;[city, housing, need, urgent];[teenager, young adults, adults, elderly];Nicolas;2.0
+Looking for Job;[city, need, urgent, job, work, office];[young adults, teenager, adults, elderly];Nicolas;1.0
+Administrative Questions;[city, need, urgent, admin];[young adults, teenager, adults, elderly];Nicolas;3.0
+Legal Questions;[need, urgent, legal];[young adults, teenager, adults, elderly];Nicolas;4.0
+Funny Jokes;[students, funny];[young adults, teenager, adults, elderly];;
+House Renovation;[housing, city];[teenager, young adults, adults, elderly];;
+University Books Market;[students, university, studies, TUM, LMU, HM];[teenager, young adults];;

@@ -1,0 +1,14 @@
+event_id;categories;age_group;user_id;rating
+Dinner;[food, eat];[young adults, adults, elderly, teenager, children];Nicolas;3.0
+Pizza Party;[food, eat, party];[young adults, adults, elderly, teenager, children];Nicolas;2.0
+Pool Party;[swimming, party, sports];[young adults, adults, elderly, teenager, children];Nicolas;1.0
+Salsa Dance;[dance, salsa];[young adults, adults, elderly, teenager];Nicolas;2.0
+Movie Night;[movie];[young aduts, adults, elderly, teenager];Nicolas;4.0
+Netflix and Chill;[movie];[young aduts, adults, elderly, teenager];Nicolas;2.0
+Munich Tour;[tour, travel, munich, bavaria];[young aduts, adults, elderly, teenager, children];Nicolas;1.0
+Neuschwanstein Tour;[tour, travel, bavaria];[young adults, adults, elderly, teenager, children];Nicolas;3.0
+Christmas Market Tour;[tour, travel, bavaria, munich];[young adults, adults, elderly, teenager, children];Nicolas;4.0
+Hackathon;[study, students, productive];[young adults, adults, teenager];;
+Swimming;[sport, swimming];[young adults, adults, teenager, children, elderly];;
+Karaoke;[sing, social];[young adults, adults, teenager, children, elderly];;
+Cooking Together;[social, food, eat];[young adults, adults, teenager, elderly];;

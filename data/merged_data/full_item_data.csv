@@ -1,0 +1,19 @@
+item_id;categories;age_group;user_id;rating
+shoe;[clothing, foot_clothing];[adult, children, elderly];Nicolas;4.0
+sweater;[clothing, body_clothing, winter_clothing];[adult, children, elderly];Nicolas;3.0
+winter jacket;[clothing, winter_clothing, body_clothing];[adult, children, elderly];Nicolas;2.0
+phone;[gadget, technology];[adult, elderly];Nicolas;1.0
+sanitary pads;[hygiene, household];[adult, elderly];Nicolas;2.0
+soap;[household, hygiene];[adult, children, elderly];Nicolas;4.0
+shampoo;[household, hygiene];[adult, children, elderly];Nicolas;2.0
+computer;[gadget, technology, school_necessity];[children, adult, elderly];Nicolas;1.0
+chair;[furniture];[adult, children, elderly];Nicolas;3.0
+bed;[furniture];[adult, children, elderly];Nicolas;4.0
+toothbrush;[hygiene, household];[adult, children, elderly];;
+toothpaste;[hygiene, household];[adult, children, elderly];;
+bag;[accessories, school_necessity];[adult, children, elderly];;
+shirt;[clothing, body_clothing];[adult, children, elderly];;
+socks;[clothing, foot_clothing];[adult, children, elderly];;
+tablet;[gadget, technology];[adult, elderly];;
+pillow;[household];[adult, children, elderly];;
+tissue;[hygiene, household];[adult, children, elderly];;
