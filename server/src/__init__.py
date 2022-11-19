@@ -32,7 +32,13 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
+    # authentication
     from . import auth
     app.register_blueprint(auth.bp)
+
+    # forum
+    from . import forum
+    app.register_blueprint(forum.bp)
+    
 
     return app
