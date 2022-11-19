@@ -13,8 +13,8 @@ bp = Blueprint('auth', __name__, url_prefix='/auth')
 def register():
     if request.method == 'POST':
         username = request.form['username']
-        real_firstname = request.form['first name']
-        real_lastname = request.form['last name']
+        real_firstname = request.form['firstname']
+        real_lastname = request.form['lastname']
         is_resident = 0 if request.form['is_refugee'] == "Yes" else 1
         password = request.form['password']
         db = get_db()
