@@ -12,10 +12,12 @@ bp = Blueprint('forum', __name__, url_prefix='/forum')
 def index():
     db = get_db()
     posts = db.execute(
-        'SELECT p.id, title, body, created, author_id, username, is_resident'
+        'SELECT p.id, title, body, created, author_id, username, is_refugee'
         ' FROM post p JOIN user u ON p.author_id = u.id'
         ' ORDER BY created DESC'
     ).fetchall()
+    for post in posts:
+        print(f"is refugee: {post['is_refugee']}")
     return render_template('forum/feed.html', posts=posts)
 
 @bp.route('/create', methods=('GET', 'POST'))

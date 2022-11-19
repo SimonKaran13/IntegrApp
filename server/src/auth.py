@@ -15,7 +15,7 @@ def register():
         username = request.form['username']
         real_firstname = request.form['firstname']
         real_lastname = request.form['lastname']
-        is_resident = 0 if request.form['is_refugee'] == "Yes" else 1
+        is_refugee = 1 if (request.form['is_refugee'] == "yes") else 0
         password = request.form['password']
         db = get_db()
         error = None
@@ -28,14 +28,12 @@ def register():
             error = 'First name is required'
         elif not real_lastname:
             error = 'Last name is required'
-        elif not is_resident:
-            error = 'It is required to know if user is resident or refugee'  
 
         if error is None:
             try:
                 db.execute(
-                    "INSERT INTO user (username, password, real_firstname, real_lastname, is_resident) VALUES (?, ?, ?, ?, ?)",
-                    (username, generate_password_hash(password), real_firstname, real_lastname, is_resident),
+                    "INSERT INTO user (username, password, real_firstname, real_lastname, is_refugee) VALUES (?, ?, ?, ?, ?)",
+                    (username, generate_password_hash(password), real_firstname, real_lastname, is_refugee),
                 )
                 db.commit()
             except db.IntegrityError:
@@ -96,3 +94,10 @@ def login_required(view):
         return view(**kwargs)
 
     return wrapped_view
+
+# Returns "1" if user is refugee, "0" otherwise
+@login_required
+def is_user_refugee():
+    if g.user is None:
+            return redirect(url_for('auth.login'))
+    return g.user['is_refugee']

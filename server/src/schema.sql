@@ -6,7 +6,7 @@ CREATE TABLE user (
   username TEXT UNIQUE NOT NULL,
   real_firstname TEXT NOT NULL,
   real_lastname TEXT NOT NULL,
-  is_resident BOOLEAN NOT NULL CHECK (is_resident IN (0, 1)),
+  is_refugee TEXT NOT NULL,
   password TEXT NOT NULL
 );
 

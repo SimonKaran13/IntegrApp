@@ -13,8 +13,8 @@
       <header>
         <div>
           <h1>{{ post['title'] }}</h1>
-          {% if post['is_resident'] == 0 %}
-          <div class="about">by {{ post['username'] }} [Refugee]' on {{ post['created'].strftime('%Y-%m-%d') }}</div>
+          {% if post['is_refugee'] == "1" %}
+          <div class="about">by {{ post['username'] }} [Refugee] on {{ post['created'].strftime('%Y-%m-%d') }}</div>
           {% else %}
           <div class="about">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</div>
           {% endif %}
