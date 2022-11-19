@@ -5,11 +5,12 @@ from flask import (
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from .auth import is_user_refugee
+from .auth import is_user_refugee, login_required
 
 bp = Blueprint('events', __name__, url_prefix='/events')
 
 @bp.route('/', methods=('GET', 'POST'))
+@login_required
 def items():
     if request.method == 'POST':
         pass
