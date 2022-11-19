@@ -40,7 +40,10 @@ def create_app(test_config=None):
     from . import forum
     app.register_blueprint(forum.bp)
     
-    from . import items
-    app.register_blueprint(items.bp)
+    from . import events
+    app.register_blueprint(events.bp)
+
+    from . import courses
+    app.register_blueprint(courses.bp)
 
     return app
