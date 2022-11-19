@@ -4,8 +4,9 @@ DROP TABLE IF EXISTS post;
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
-  real_firstname VARCHAR(255) NOT NULL,
-  real_lastname VARCHAR(255) NOT NULL,
+  real_firstname TEXT NOT NULL,
+  real_lastname TEXT NOT NULL,
+  is_resident BOOLEAN NOT NULL CHECK (is_resident IN (0, 1)),
   password TEXT NOT NULL
 );
 
