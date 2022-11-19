@@ -40,5 +40,7 @@ def create_app(test_config=None):
     from . import forum
     app.register_blueprint(forum.bp)
     
+    from . import items
+    app.register_blueprint(items.bp)
 
     return app
