@@ -7,7 +7,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from .auth import is_user_refugee, login_required
 
-bp = Blueprint('items', __name__, url_prefix='/items')
+bp = Blueprint('welcome', __name__, url_prefix='/welcome')
 
 @bp.route('/', methods=('GET', 'POST'))
 @login_required
