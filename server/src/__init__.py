@@ -46,4 +46,7 @@ def create_app(test_config=None):
     from . import courses
     app.register_blueprint(courses.bp)
 
+    from . import homepage
+    app.register_blueprint(homepage.bp)
+
     return app
