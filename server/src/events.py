@@ -16,7 +16,7 @@ def items():
         pass
     
     ## todo: user is refugee or local?
-
+    
     if is_user_refugee == "1":
         return render_template('refugee_events/refugee_events.html')
     else:
