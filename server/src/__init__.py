@@ -29,24 +29,24 @@ def create_app(test_config=None):
     def hello():
         return 'IntegrApp running on flask'
 
-    from src.blueprints.db import init_app
+    from blueprints.db import init_app
     init_app(app)
 
     # authentication
-    from src.blueprints.auth import bp as auth_bp
+    from blueprints.auth import bp as auth_bp
     app.register_blueprint(auth_bp)
 
     # forum
-    from src.blueprints.forum import bp as forum_bp
+    from blueprints.forum import bp as forum_bp
     app.register_blueprint(forum_bp)
     
-    from src.blueprints.events import bp as events_bp
+    from blueprints.events import bp as events_bp
     app.register_blueprint(events_bp)
 
-    from src.blueprints.courses import bp as courses_bp
+    from blueprints.courses import bp as courses_bp
     app.register_blueprint(courses_bp)
 
-    from src.blueprints.homepage import bp as homepage_bp
+    from blueprints.homepage import bp as homepage_bp
     app.register_blueprint(homepage_bp)
 
     return app
