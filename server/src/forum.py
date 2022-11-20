@@ -9,7 +9,7 @@ from .db import get_db
 bp = Blueprint('forum', __name__, url_prefix='/forum')
 
 @bp.route('/feed')
-def index():
+def feed():
     db = get_db()
     posts = db.execute(
         'SELECT p.id, title, body, created, author_id, username, is_refugee'
