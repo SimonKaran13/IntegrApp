@@ -52,7 +52,7 @@ def create_app(test_config=None):
     from blueprints.items import bp as items_bp
     app.register_blueprint(items_bp)
 
-    from blueprint.welcome import bp as welcome_bp
+    from blueprints.welcome import bp as welcome_bp
     app.register_blueprint(welcome_bp)
 
     return app

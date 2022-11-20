@@ -63,7 +63,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('/welcome'))
+            return render_template('/welcome')
 
     return render_template('auth/login.html')
 
