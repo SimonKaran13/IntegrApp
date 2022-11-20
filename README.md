@@ -11,6 +11,12 @@ Install requirements
 ```sh
 pip3 install -r server/requirements.txt
 ```
+
+Add root module to Python path
+```sh
+export PYTHONPATH=$PYTHONPATH:.server/src
+```
+
 To run the DB:
 ```sh
 flask --app server/src/ init-db
