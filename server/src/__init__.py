@@ -32,6 +32,9 @@ def create_app(test_config=None):
     from blueprints.db import init_app
     init_app(app)
 
+    from blueprints.welcome import bp as welcome_bp
+    app.register_blueprint(welcome_bp)
+
     # authentication
     from blueprints.auth import bp as auth_bp
     app.register_blueprint(auth_bp)
@@ -51,8 +54,5 @@ def create_app(test_config=None):
 
     from blueprints.items import bp as items_bp
     app.register_blueprint(items_bp)
-
-    from blueprints.welcome import bp as welcome_bp
-    app.register_blueprint(welcome_bp)
 
     return app

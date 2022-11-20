@@ -15,6 +15,7 @@ def items():
     if request.method == 'POST':
         pass
     
+    print(type(is_user_refugee()))
     ## todo: user is refugee or local?
     if is_user_refugee() == "1":
         return render_template('refugee_items/refugee_items.html')
