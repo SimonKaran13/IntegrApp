@@ -1,15 +1,98 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="de"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/static/nicepage.css" media="screen">
+<link rel="stylesheet" href="/static/Log-In.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "IntegrApp",
+		"logo": "/static/images/WhatsAppImage2022-11-19at17.33.381.jpeg"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Log In">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="de"><header class="u-clearfix u-header u-header" id="sec-b153"><div class="u-clearfix u-sheet u-valign-top-xs u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="/static/images/WhatsAppImage2022-11-19at17.33.381.jpeg" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" data-lang-en="{&quot;content&quot;:&quot;<svg class=\&quot;u-svg-link\&quot; viewBox=\&quot;0 0 24 24\&quot;><use xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xlink:href=\&quot;#menu-hamburger\&quot;></use></svg><svg class=\&quot;u-svg-content\&quot; version=\&quot;1.1\&quot; id=\&quot;menu-hamburger\&quot; viewBox=\&quot;0 0 16 16\&quot; x=\&quot;0px\&quot; y=\&quot;0px\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;>    <g>        <rect y=\&quot;1\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;7\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;13\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>    </g></svg>&quot;,&quot;href&quot;:&quot;#&quot;}">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-3-base" href="Local-Resident-Welcome.html" style="padding: 10px 20px;" data-lang-en="{&quot;content&quot;:&quot;Local Resident Welcome&quot;,&quot;href&quot;:&quot;Local-Resident-Welcome.html&quot;}">Local Resident Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-3-base" href="Refugee-Welcome.html" style="padding: 10px 20px;" data-lang-en="{&quot;content&quot;:&quot;Refugee Welcome&quot;,&quot;href&quot;:&quot;Refugee-Welcome.html&quot;}">Refugee Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-3-base" href="Homepage.html" style="padding: 10px 20px;" data-lang-en="{&quot;content&quot;:&quot;Homepage&quot;,&quot;href&quot;:&quot;Homepage.html&quot;}">Homepage</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-3-base" href="Find-Items.html" style="padding: 10px 20px;" data-lang-en="{&quot;content&quot;:&quot;Find Items&quot;,&quot;href&quot;:&quot;Find-Items.html&quot;}">Find Items</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-3-base" href="Seite-1.html" style="padding: 10px 20px;" data-lang-en="{&quot;content&quot;:&quot;Seite 1&quot;,&quot;href&quot;:&quot;Seite-1.html&quot;}">Seite 1</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Local-Resident-Welcome.html" data-lang-en="{&quot;content&quot;:&quot;Local Resident Welcome&quot;,&quot;href&quot;:&quot;Local-Resident-Welcome.html&quot;}">Local Resident Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Refugee-Welcome.html" data-lang-en="{&quot;content&quot;:&quot;Refugee Welcome&quot;,&quot;href&quot;:&quot;Refugee-Welcome.html&quot;}">Refugee Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Homepage.html" data-lang-en="{&quot;content&quot;:&quot;Homepage&quot;,&quot;href&quot;:&quot;Homepage.html&quot;}">Homepage</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Find-Items.html" data-lang-en="{&quot;content&quot;:&quot;Find Items&quot;,&quot;href&quot;:&quot;Find-Items.html&quot;}">Find Items</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Seite-1.html" data-lang-en="{&quot;content&quot;:&quot;Seite 1&quot;,&quot;href&quot;:&quot;Seite-1.html&quot;}">Seite 1</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-1" id="carousel_8844">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1" data-lang-en="​Pet &amp;amp; Animal Care Courses">Log In</h2>
+        <div class="u-form u-form-1">
+          <form method="post">
+            <label for="username">Username</label>
+            <input name="username" id="username" placeholder="Enter your username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+            <input type="submit" value="Log In" class="u-btn u-btn-submit u-button-style">
+          </form>
+          <!-- <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="name-807e" class="u-label">Username</label>
+              <input type="text" placeholder="Enter your username" id="name-807e" name="username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-group">
+              <label for="email-807e" class="u-label">Password</label>
+              <input type="text" placeholder="Enter your password" id="email-807e" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="https://google.com" class="u-btn u-btn-submit u-button-style" target="_blank">submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Vielen Dank! Ihre Nachricht wurde gesendet. </div>
+            <div class="u-form-send-error u-form-send-message"> Ihre Nachricht konnte nicht gesendet werden. Bitte beheben Sie den Fehler und versuchen Sie es erneut. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="e8dedf433b2f9e8469cbbd3b973f0790">
+          </form> -->
+        </div>
 
-{% block header %}
-  <h1>{% block title %}Log In{% endblock %}</h1>
-{% endblock %}
-
-{% block content %}
-  <form method="post">
-    <label for="username">Username</label>
-    <input name="username" id="username" required>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
-    <input type="submit" value="Log In">
-  </form>
-{% endblock %}
+      </div>
+    </section>
+  
+</body></html>
