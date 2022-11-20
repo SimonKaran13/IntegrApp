@@ -14,16 +14,16 @@ pip3 install -r server/requirements.txt
 
 Add root module to Python path
 ```sh
-cd server
+cd server/src
 export PYTHONPATH=$PYTHONPATH:.src
 ```
 
 To run the DB:
 ```sh
-flask --app src init-db
+flask --app . init-db
 ```
 
 To run the server:
 ```sh
-flask --app src --debug run 
+flask --app . --debug run 
 ```
