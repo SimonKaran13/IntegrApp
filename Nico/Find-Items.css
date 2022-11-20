@@ -225,13 +225,13 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 820px;
+  min-height: 777px;
 }
 
 .u-section-2 .u-text-1 {
   font-size: 3.75rem;
   text-shadow: 2px 2px 8px rgba(71,138,201,0.4);
-  margin: 94px 90px 0;
+  margin: 103px 90px 0;
 }
 
 .u-section-2 .u-text-2 {
@@ -254,7 +254,7 @@
 .u-section-2 .u-repeater-1 {
   grid-template-columns: calc(33.3333% - 20px) calc(33.3333% - 20px) calc(33.3333% - 20px);
   grid-gap: 30px 30px;
-  min-height: 402px;
+  min-height: 315px;
 }
 
 .u-section-2 .u-list-item-1 {
@@ -262,7 +262,7 @@
 }
 
 .u-section-2 .u-container-layout-1 {
-  padding: 13px 15px 2px;
+  padding: 13px 15px 0;
 }
 
 .u-section-2 .u-text-3 {
@@ -275,15 +275,15 @@
 }
 
 .u-section-2 .u-image-1 {
-  width: 269px;
-  height: 179px;
-  margin: 51px auto 0;
+  width: 240px;
+  height: 164px;
+  margin: 22px auto 0 32px;
 }
 
 .u-section-2 .u-icon-1 {
   width: 69px;
   height: 69px;
-  margin: 30px 0 0 auto;
+  margin: -12px 0 0 auto;
   padding: 6px;
 }
 
@@ -292,7 +292,7 @@
 }
 
 .u-section-2 .u-container-layout-2 {
-  padding: 13px 15px 2px;
+  padding: 13px 15px 0;
 }
 
 .u-section-2 .u-text-4 {
@@ -305,15 +305,15 @@
 }
 
 .u-section-2 .u-image-2 {
-  width: 269px;
-  height: 179px;
-  margin: 51px auto 0;
+  width: 240px;
+  height: 164px;
+  margin: 22px auto 0 32px;
 }
 
 .u-section-2 .u-icon-2 {
   width: 69px;
   height: 69px;
-  margin: 30px 0 0 auto;
+  margin: -12px 0 0 auto;
   padding: 6px;
 }
 
@@ -322,7 +322,7 @@
 }
 
 .u-section-2 .u-container-layout-3 {
-  padding: 13px 15px 2px;
+  padding: 13px 15px 0;
 }
 
 .u-section-2 .u-text-5 {
@@ -335,15 +335,15 @@
 }
 
 .u-section-2 .u-image-3 {
-  width: 269px;
-  height: 179px;
-  margin: 51px auto 0;
+  width: 240px;
+  height: 164px;
+  margin: 22px auto 0 32px;
 }
 
 .u-section-2 .u-icon-3 {
   width: 69px;
   height: 69px;
-  margin: 30px 0 0 auto;
+  margin: -12px 0 0 auto;
   padding: 6px;
 }
 
@@ -362,7 +362,7 @@
   }
 
   .u-section-2 .u-repeater-1 {
-    min-height: 328px;
+    min-height: 257px;
   }
 
   .u-section-2 .u-text-3 {
@@ -388,7 +388,7 @@
 
   .u-section-2 .u-repeater-1 {
     grid-template-columns: calc(50% - 15px) calc(50% - 15px);
-    min-height: 802px;
+    min-height: 635px;
   }
 }
 
