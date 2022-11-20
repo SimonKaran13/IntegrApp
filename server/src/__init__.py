@@ -49,4 +49,7 @@ def create_app(test_config=None):
     from blueprints.homepage import bp as homepage_bp
     app.register_blueprint(homepage_bp)
 
+    from blueprints.items import bp as items_bp
+    app.register_blueprint(items_bp)
+
     return app

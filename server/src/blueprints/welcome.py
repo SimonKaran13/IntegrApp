@@ -7,22 +7,23 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from .auth import is_user_refugee, login_required
 
-bp = Blueprint('courses', __name__, url_prefix='/courses')
+bp = Blueprint('items', __name__, url_prefix='/items')
 
 @bp.route('/', methods=('GET', 'POST'))
+@login_required
 def items():
     if request.method == 'POST':
         pass
     
     ## todo: user is refugee or local?
-
+    
     if is_user_refugee == "1":
-        return render_template('refugee_courses/refugee_courses.html')
+        return render_template('refugee_welcome/refugee_welcome.html')
     else:
-        return render_template('local_courses/local_courses.html')
+        return render_template('local_welcome/local_welcome.html')
         
 ''' ADDITIONAL NICE TO HAVE PAGE
-@bp.route('/a_course', methods=('POST'))
+@bp.route('/shirts', methods=('POST'))
 def items_shirts():
-    return render_template(a course html)
+    return render_template(TO BE FILLED)
 '''
