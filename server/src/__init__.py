@@ -35,7 +35,7 @@ def create_app(test_config=None):
     # authentication
     from blueprints.auth import bp as auth_bp
     app.register_blueprint(auth_bp)
-
+    
     # forum
     from blueprints.forum import bp as forum_bp
     app.register_blueprint(forum_bp)

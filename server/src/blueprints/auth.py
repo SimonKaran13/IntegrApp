@@ -39,9 +39,7 @@ def register():
             except db.IntegrityError:
                 error = f"User {username} is already registered."
             else:
-                return redirect(url_for("auth.login"))
-
-        flash(error)
+                return render_template('auth/login.html')
 
     return render_template('auth/register.html')
 
@@ -66,7 +64,6 @@ def login():
             session['user_id'] = user['id']
             return redirect(url_for('forum.create'))
 
-        flash(error)
     return render_template('auth/login.html')
 
 @bp.before_app_request
